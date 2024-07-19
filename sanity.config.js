@@ -7,8 +7,8 @@ export default defineConfig({
   name: 'default',
   title: 'admin.angelcities.net',
 
-  projectId: 'ck3xzstw',
-  dataset: 'production',
+  projectId: import.meta.env.PUBLIC_SANITY_STUDIO_PROJECT_ID,
+  dataset: import.meta.env.PUBLIC_SANITY_STUDIO_DATASET,
 
   plugins: [structureTool(), visionTool()],
 
